@@ -1,0 +1,229 @@
+.leftBar{
+    background: #1b2737;
+    width: 35%;
+    padding-left: 15px;
+}
+
+
+/*image*/
+
+
+.leftBar__img{
+    width: 200px;
+    height: 200px;
+}
+
+.leftBar__img img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+
+
+/*main*/
+
+
+.leftBar *{
+    color: #b6bfc8;
+}
+
+
+.leftBar a{
+    color: #b6bfc8;
+    transition-duration: .2s;
+}
+
+.leftBar a:hover{
+    color: cyan;
+    transition-duration: .2s;
+}
+
+.leftBar i{
+    margin-right: 10px;
+    margin-bottom: 12px;
+}
+
+
+/*viber, whatsapp color*/
+
+
+.fa-viber{
+    color: #a79ee0;
+}
+
+
+.fa-whatsapp{
+    color: #13ad9b;
+}
+
+
+
+
+
+/*skills*/
+
+.leftBar__skillsItems{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.leftBar__skillsItem{
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+
+/*language*/
+
+
+.leftBar__languages>div{
+    margin-bottom: 10px;
+}
+
+
+.leftBar__enBar{
+    position: relative;
+    float: right;
+    width: 250px;
+    height: 7px;
+    background-color: white;
+    margin-right: 20px;
+    margin-top: -10px;
+    cursor: help;
+}
+
+
+.leftBar__enBar:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 65%;
+    height: 100%;
+    background-color: #22b2ff;
+}
+
+.leftBar__enBar:hover:after{
+    background-color: cyan;
+    box-shadow: 0 0 20px cyan;
+    animation-name: english;
+    animation-duration: .5s;
+}
+
+
+@keyframes english {
+    0%{
+        width: 0;
+    }
+
+    100%{
+        width: 65%;
+    }
+}
+
+
+.leftBar__ruBar{
+    position: relative;
+    float: right;
+    width: 250px;
+    height: 7px;
+    background-color: white;
+    margin-right: 20px;
+    margin-top: -10px;
+    cursor: help;
+}
+
+
+.leftBar__ruBar:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 90%;
+    height: 100%;
+    background-color: #22b2ff;
+}
+
+.leftBar__ruBar:hover:after{
+    background-color: cyan;
+    box-shadow: 0 0 20px cyan;
+    animation-name: russian;
+    animation-duration: .5s;
+}
+
+
+@keyframes russian {
+    0%{
+        width: 0;
+    }
+
+    100%{
+        width: 90%;
+    }
+}
+
+
+
+.leftBar__geBar{
+    position: relative;
+    float: right;
+    width: 250px;
+    height: 7px;
+    background-color: white;
+    margin-right: 20px;
+    margin-top: -10px;
+    cursor: help;
+}
+
+
+.leftBar__geBar:after{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #22b2ff;
+}
+
+.leftBar__geBar:hover:after{
+    background-color: cyan;
+    box-shadow: 0 0 20px cyan;
+    animation-name: georgian;
+    animation-duration: .5s;
+}
+
+
+@keyframes georgian{
+    0%{
+        width: 0;
+    }
+
+    100%{
+        width: 100%;
+    }
+}
+
+
+
+/*strengths*/
+
+.leftBar__strengthsList{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.leftBar__strengthsList li{
+    margin-bottom: 10px;
+    margin-right: 15px;
+}
+
+
+/*hobby*/
+
+.leftBar__hobbyItem i, .leftBar__hobbyItem span{
+    font-size: 20px;
+}
