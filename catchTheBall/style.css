@@ -1,0 +1,128 @@
+.catchTheBall{
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.catchTheBall .catchTheBallBlock{
+    position: relative;
+    width: fit-content;
+    background-color: white;
+}
+
+
+.catchTheBall .relative, .catchTheBall .level{
+    width: 500px;
+    height: 500px;
+    border: 1px solid #0fdbc9;
+    background-color: #0fdbc9;
+}
+
+
+.catchTheBall .level p{
+    width: 50%;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 20px 30px;
+    margin: 10% auto;
+}
+
+
+.catchTheBall .level .easy{
+    background-color: green;
+}
+
+.catchTheBall .level .medium{
+    background-color: yellow;
+}
+
+.catchTheBall .level .hard{
+    background-color: red;
+}
+
+.catchTheBall .level div{
+    padding: 20px;
+    font-size: 20px;
+}
+
+
+.catchTheBall .gameBlock{
+    display: none;
+}
+
+.catchTheBall .child{
+    background-color: #bf1717;
+    width: 50px;
+    height: 50px;
+    margin-left: 77px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+
+.catchTheBall .start{
+    margin: 20px;
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+    color: white;
+    background-color: #1d4ee2;
+    cursor: pointer;
+    border: none
+}
+
+.scoreTimer{
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.catchTheBall .score, .catchTheBall .timer{
+    font-size: 30px;
+    font-weight: bold;
+    margin: 5px 0;
+    width: fit-content;
+}
+
+
+.catchTheBall .levelChange{
+    color: #00a4ff;
+    float: right;
+    margin: 20px;
+    cursor: pointer;
+}
+
+
+/*close*/
+
+
+.catchTheBall .close{
+    position: absolute;
+    top: -12px;
+    right: 2px;
+    cursor: pointer;
+}
+
+
+.catchTheBall .close div{
+    position: absolute;
+    width: 5px;
+    height: 25px;
+    background-color: red;
+    border-radius: 5px;
+}
+
+.catchTheBall .close div:first-child{
+    transform: rotate(45deg);
+}
+
+.catchTheBall .close div:last-child{
+    transform: rotate(-45deg);
+}
+

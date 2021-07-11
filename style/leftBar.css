@@ -4,22 +4,43 @@
     padding-left: 15px;
 }
 
-
-/*image*/
-
-
-.leftBar__img{
-    width: 200px;
-    height: 200px;
+@media screen and (max-width: 768px){
+    .leftBar{
+        width: 100%;
+        min-width: 280px;
+        margin-bottom: 50px;
+        padding-bottom: 20px;
+    }
 }
 
-.leftBar__img img{
-    width: 100%;
-    height: auto;
-    border-radius: 50%;
+/*mobile*/
+
+.mobile__top{
+    display: none;
 }
 
+@media screen and (max-width: 768px){
+    .mobile__top{
+        display: unset;
+    }
+}
 
+.mobile__top{
+    position: relative;
+    padding-top: 30px;
+    text-align: center;
+    background-color: #0085e0;
+}
+
+.mobile__name h1{
+    font-size: 40px;
+    font-family: "Fondamento", sans-serif;
+    margin-bottom: 20px;
+}
+
+.mobile__title{
+    font-size: 20px;
+}
 
 /*main*/
 
@@ -59,8 +80,6 @@
 
 
 
-
-
 /*skills*/
 
 .leftBar__skillsItems{
@@ -68,11 +87,20 @@
     flex-wrap: wrap;
 }
 
-
 .leftBar__skillsItem{
-    margin-right: 20px;
+    padding-right: 10px;
     margin-bottom: 10px;
 }
+
+.leftBar__skillsItem:not(:first-child){
+    padding-left: 10px;
+}
+
+
+.leftBar__skillsItem:not(:last-child){
+    border-right: 2px solid #b6bfc8;
+}
+
 
 
 /*language*/
@@ -86,7 +114,7 @@
 .leftBar__enBar{
     position: relative;
     float: right;
-    width: 250px;
+    width: 60%;
     height: 7px;
     background-color: white;
     margin-right: 20px;
@@ -100,7 +128,7 @@
     position: absolute;
     top: 0;
     bottom: 0;
-    width: 65%;
+    width: 60%;
     height: 100%;
     background-color: #22b2ff;
 }
@@ -127,7 +155,7 @@
 .leftBar__ruBar{
     position: relative;
     float: right;
-    width: 250px;
+    width: 60%;
     height: 7px;
     background-color: white;
     margin-right: 20px;
@@ -169,7 +197,7 @@
 .leftBar__geBar{
     position: relative;
     float: right;
-    width: 250px;
+    width: 60%;
     height: 7px;
     background-color: white;
     margin-right: 20px;

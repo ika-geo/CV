@@ -1,0 +1,121 @@
+.guessNumber{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.guessNumber .mainBlock{
+    position: relative;
+    width: 500px;
+    height: 400px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+                                                                /*Game Page*/
+.guessNumber .gamePage{
+    display: none;
+}
+
+.guessNumber .highNumber{
+    color: green;
+}
+
+.guessNumber .lowNumber{
+    color: red;
+}
+
+.guessNumber .results{
+    margin-top: 50px;
+}
+
+
+
+
+.guessNumber .close{
+    position: absolute;
+    top: -8px;
+    right: 9px;
+    cursor: pointer;
+}
+
+.guessNumber .close div{
+    position: absolute;
+    width: 5px;
+    height: 25px;
+    background-color: red;
+    border-radius: 5px;
+}
+
+.guessNumber .close div:first-child{
+    transform: rotate(45deg);
+}
+
+.guessNumber .close div:last-child{
+    transform: rotate(-45deg);
+}
+
+
+.guessNumber .helpText{
+    text-align: center;
+}
+
+
+
+
+.helpNumber{
+    margin-left: 20px;
+    font-size: 25px;
+    font-weight: bold;
+    color: #807474;
+    cursor: pointer;
+}
+
+
+                                                 /*level Page*/
+.changeLevel{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    color: green;
+}
+
+.guessNumber .levelPage{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    width: 100%;
+}
+
+.guessNumber .levelPage>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 40%;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+
+.guessNumber .easy{
+    background-color: green;
+}
+
+.guessNumber .medium{
+    background-color: yellow;
+}
+
+.guessNumber .hard{
+    background-color: darkred;
+}

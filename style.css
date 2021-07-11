@@ -2,4 +2,16 @@
 @import url("./style/container.css");
 @import url("./style/leftBar.css");
 @import url("./style/mainBar.css");
+
+/*fonts*/
 @import url("./style/font.css");
+
+
+/*catchTheBall*/
+@import url("./catchTheBall/style.css");
+
+/*guessTheNumber*/
+@import url("./guessTheNumber/style.css");
+
+/*clickOnASquare*/
+@import url("./clickOnASquare/style.css");
