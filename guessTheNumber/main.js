@@ -34,7 +34,7 @@ gameStartIMG1.addEventListener("click", function (){
         $mainWindow1.style.display="flex"
     }
     else {
-        alert("device width must be more than 600px")
+        alert("device width must be more than 600px to play games")
     }
 
 })
@@ -52,7 +52,7 @@ window.addEventListener("resize", function (){
     if (window.innerWidth<600 && $mainWindow1.style.display==="flex"){
         defaultPage();
         $mainWindow1.style.display="none"
-        alert("device width must be more than 600px")
+        alert("device width must be more than 600px to play games")
     }
 })
 
