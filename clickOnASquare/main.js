@@ -12,14 +12,15 @@ let $text = document.querySelector(".clickOnASquare .text");
 let $block = document.querySelector(".clickOnASquare .block")
 
 
-//start game by click image
+let interval;   //for timer
 
+//start game by click image
 
 
 gameStartIMG2.addEventListener("click", function (){
     if (window.innerWidth>600){
         $mainWindow2.style.display="flex"
-        gameEnd=false
+        gameEnd=false;
     }
     else {
         alert("device width must be more than 600px to play games")
@@ -32,8 +33,8 @@ let gameEnd;
 
 $close2.addEventListener("click", function (){
     $mainWindow2.style.display="none";
-    endGame();
     gameEnd = true;
+    endGame();
 })
 
 
@@ -42,6 +43,7 @@ window.addEventListener("resize", function (){
     if (window.innerWidth<600 && $mainWindow2.style.display==="flex"){
         $mainWindow2.style.display="none"
         endGame()
+        gameEnd = true;
         alert("device width must be more than 600px to play games")
     }
 })
@@ -65,12 +67,18 @@ function startGame() {
 }
 
 function endGame() {
+    clearInterval(interval);
     $box.style.display = "none";
     $time.style.display = "inline"
     $button.style.display = "inline"
     $block.style.marginBottom=20+"px"
     $block.style.backgroundColor="#bfbfbf"
-    $text.innerHTML = `Score is ${score1}`;
+    if (!gameEnd){
+        $text.innerHTML = `Score is ${score1}`;
+    }
+    else {
+        $text.innerHTML = `10`;
+    }
 }
 
 function scoreF() {
@@ -89,10 +97,9 @@ function htmlChange() {
 $text.innerHTML = $input1.value;
 
 function timeF() {
-    let interval = setInterval(() => {
+    interval = setInterval(() => {
         $text.innerHTML = ($text.innerHTML - 0.1).toFixed(1);
-        if ($text.innerHTML <= 0||gameEnd===true) {
-            clearInterval(interval);
+        if ($text.innerHTML <= 0||gameEnd) {
             endGame();
         }
     }, 100)
