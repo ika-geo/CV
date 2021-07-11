@@ -47,7 +47,6 @@ $close.addEventListener("click", function (){
     $score.innerHTML=score;
 })
 
-
 window.addEventListener("resize", function (){
     if (window.innerWidth<600 && $mainWindow.style.display==="flex"){
         $level.style.display="block";

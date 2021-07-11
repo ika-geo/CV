@@ -39,7 +39,6 @@ gameStartIMG1.addEventListener("click", function (){
 
 })
 
-
 //close game window
 
 $close1.addEventListener("click", function (){

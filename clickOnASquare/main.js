@@ -26,7 +26,6 @@ gameStartIMG2.addEventListener("click", function (){
     }
 })
 
-
 //close game window
 
 let gameEnd;
