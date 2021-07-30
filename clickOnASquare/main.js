@@ -54,7 +54,6 @@ window.addEventListener("resize", function (){
 
 $button.addEventListener("click", () => startGame());
 
-
 let score1 = 0;
 
 function startGame() {
@@ -63,11 +62,11 @@ function startGame() {
     timeF();
     $box.addEventListener("click", renderBox);
     $box.addEventListener("click", scoreF);
-    setTimeout("endGame()", $input1.value * 1000);
 }
 
 function endGame() {
     clearInterval(interval);
+    $text.innerHTML="0"
     $box.style.display = "none";
     $time.style.display = "inline"
     $button.style.display = "inline"
@@ -98,7 +97,7 @@ $text.innerHTML = $input1.value;
 
 function timeF() {
     interval = setInterval(() => {
-        $text.innerHTML = ($text.innerHTML - 0.1).toFixed(1);
+        $text.innerHTML = (parseFloat($text.innerHTML) - 0.1).toFixed(1);
         if ($text.innerHTML <= 0||gameEnd) {
             endGame();
         }
