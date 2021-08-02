@@ -14,6 +14,7 @@
 .catchTheBall .catchTheBallBlock{
     position: relative;
     width: fit-content;
+    width: -moz-fit-content;
     background-color: white;
 }
 
@@ -81,6 +82,7 @@
 .scoreTimer{
     margin: 0 auto;
     width: fit-content;
+    width: -moz-fit-content;
 }
 
 .catchTheBall .score, .catchTheBall .timer{
@@ -88,6 +90,7 @@
     font-weight: bold;
     margin: 5px 0;
     width: fit-content;
+    width: -moz-fit-content;
 }
 
 
