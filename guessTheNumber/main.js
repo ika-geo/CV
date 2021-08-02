@@ -1,6 +1,5 @@
 let gameStartIMG1 = document.querySelector(".guessTheNumberIMG")
 
-
 // main page
 let $mainWindow1 = document.querySelector(".guessNumber")
 
