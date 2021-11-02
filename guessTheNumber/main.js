@@ -90,8 +90,8 @@ function defaultPage(){
     $results.innerHTML=""
     randomNumber=""
     resultsArr=[];
-    $highNumber.innerHTML=`<br>`;
-    $lowNumber.innerHTML=`<br>`;
+    $highNumber.innerHTML=`&nbsp`;
+    $lowNumber.innerHTML=`&nbsp`;
     $results.innerHTML=""
     $input.value=""
     $gamePage.style.display="none"

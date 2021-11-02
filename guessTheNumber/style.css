@@ -26,10 +26,12 @@
 
 .guessNumber .highNumber{
     color: green;
+    margin-bottom: 1rem;
 }
 
 .guessNumber .lowNumber{
     color: red;
+    margin-top: 1rem;
 }
 
 .guessNumber .results{
